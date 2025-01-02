@@ -1,3 +1,5 @@
+console.log('testing content')
+
 function modifyAnchors() {
     document.querySelectorAll("a[target='_blank']").forEach(anchor => {
         anchor.setAttribute("target", "_self")
