@@ -19,6 +19,7 @@ chrome.storage.local.get(["isEnabled"], (result) => {
 
 // Handle button click
 toggleButton.addEventListener("click", () => {
+    console.log("toggle button clicked")
   chrome.storage.local.get(["isEnabled"], (result) => {
     const isEnabled = result.isEnabled !== false; // Default to true
     const newState = !isEnabled;
